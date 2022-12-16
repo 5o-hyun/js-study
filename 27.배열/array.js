@@ -18,15 +18,11 @@ console.log("* es6 빈배열생성 : " + arr3, "갯수 : " + arr3.length);
 console.log("* 전달된인수를 요소로갖는배열 : " + arr4, "갯수 : " + arr4.length);
 
 const array = [1, 2, 3, 2];
-
-// 배열인지아닌지
-console.log(Array.isArray(array));
-
-// 요소가있냐없냐
-console.log(array.indexOf(2));
+console.log(Array.isArray(array)); // isArray : 배열인지아닌지
+console.log(array.indexOf(2)); // indexOf : 요소가있냐없냐
 console.log(array.indexOf(4));
 console.log(array.indexOf(2, 2));
-// 요소가있냐없냐 -> es7
+// include : 요소가있냐없냐 -> es7
 if (!array.includes(5)) {
   array.push(5); // push : 끝에 추가
 }
