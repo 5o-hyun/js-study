@@ -18,7 +18,7 @@ function plus(number) {
 }
 console.log(plus(1));
 // 2-3. 배열복사
-const copy = [...arr]; // [1 10 2 3]
+const copy = [...arr]; // [1 10 2 3]]
 console.log(copy);
 // 2-4. 이터러블 배열로 반환 (arguments객체는 이터러블이면서 유사배열이다.)
 function sum() {
@@ -32,3 +32,4 @@ const arrCopy = { ...obj };
 console.log(arrCopy);
 console.log({ ...arrCopy, ...{ y: 100 } }); // 객체프로퍼티변경
 console.log({ ...arrCopy, ...{ z: 3 } }); // 객체병합
+console.log(Object.assign({}, { x: 1, y: 2 }, { y: 10, z: 3 })); // spread 도입전엔 Object.assign이였다.
